@@ -7,16 +7,11 @@ title: "Public keys"
 pubkeys:
     vpn: "Qm/edx+h+GDYi+jTOiw9+7CYs2AMyHxHDneXWK0bihk="
     pc: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIONax9HStki13OGyffBiO1kpCVInERwnjU95Og1V5d8K"
+    kubuntu: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE0PXSE5bXEisQV1Y8BpApZwes/wF0sWOutOLtk4ZzDO"
 ---
 
-# VPN server
+| Name | Key |
+|------|-----|
+{% for pubkey in page.pubkeys %}| {{ pubkey[0] }} | {{ pubkey[1] }} |
+{% endfor %}
 
-```plaintext
-{{ page.pubkeys.vpn }}
-```
-
-## PC SSH
-
-```plaintext
-{{ page.pubkeys.pc }}
-```
