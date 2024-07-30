@@ -12,6 +12,5 @@ pubkeys:
 
 | Name | Key |
 |------|-----|
-{% for pubkey in page.pubkeys %}| {{ pubkey[0] }} | {{ pubkey[1] }} |
+{% for pubkey in page.pubkeys %}| {{ pubkey[0] }} | `{{ pubkey[1] }}` |
 {% endfor %}
-
