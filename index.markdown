@@ -14,3 +14,7 @@ pubkeys:
 |------|-----|
 {% for pubkey in page.pubkeys %}| {{ pubkey[0] }} | `{{ pubkey[1] }}` |
 {% endfor %}
+
+|RPI fingerprints|
+|----------------|
+|`SHA256:fbMcyoGvJ0eVSgvLgjNNgHmwfgpjwwb8L/nOHcVWII0`|
